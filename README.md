@@ -1,4 +1,6 @@
 📘 Gerenciador de Clientes — Documentação Técnica para Iniciantes
+
+
 🧾 Visão Geral
 Gerenciador de Clientes é uma aplicação desktop desenvolvida em Python 3 com interface gráfica utilizando Tkinter e persistência de dados via SQLite. O projeto foi criado com fins educacionais para auxiliar iniciantes no aprendizado de programação Python, integração com banco de dados, manipulação de interface gráfica e boas práticas de desenvolvimento modular.
 
@@ -142,17 +144,19 @@ cpf	TEXT	CPF do cliente
 A criação da tabela é automática na primeira execução via Backend.initDB().
 
 ❗ Dicas de Solução de Problemas
+
 🐍 Erro: No module named tkinter
 No Linux, instale o suporte ao Tkinter:
 
-
 sudo apt install python3-tk
+
 🧾 Tabela não aparece / não atualiza
 Verifique se o arquivo clientes.db está na mesma pasta da aplicação.
 
 Confirme se os registros estão sendo inseridos corretamente (campos obrigatórios).
 
 📘 O Que Você Aprende com Este Projeto
+
 Tópico	O que é aprendido
 Python	Classes, módulos, métodos, estrutura de código
 SQLite	CRUD com SQL, conexões, uso de queries parametrizadas
@@ -169,3 +173,4 @@ PyInstaller	Geração de executável para distribuição
 
 🎨 Melhorias visuais: ícones, temas, responsividade, menus.
 
+Desenvolvido Felipe L Bozze
