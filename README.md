@@ -18,15 +18,21 @@ A aplicação permite:
 Todos os dados são armazenados localmente no arquivo clientes.db utilizando SQLite.
 
 🗂️ Estrutura do Projeto
+
 plaintext
-Copiar
-Editar
+
 gerenciador_clientes/
-├── Gui.py           # Interface gráfica (Tkinter)
-├── Backend.py       # Lógica de banco de dados (SQLite)
-├── application.py   # Arquivo principal (inicialização do app)
-└── clientes.db      # (Gerado automaticamente) Base de dados SQLite
+
+ Gui.py           # Interface gráfica (Tkinter)
+ 
+ Backend.py       # Lógica de banco de dados (SQLite)
+ 
+ application.py   # Arquivo principal (inicialização do app)
+ 
+ clientes.db      # (Gerado automaticamente) Base de dados SQLite
+
 🔹 Gui.py
+
 Define a classe Gui responsável pela construção da interface gráfica com Tkinter.
 
 Contém os campos de entrada, botões e a tabela (Treeview).
@@ -34,6 +40,7 @@ Contém os campos de entrada, botões e a tabela (Treeview).
 Usa ttk, messagebox, treeview e métodos da classe Backend para realizar as operações.
 
 🔹 Backend.py
+
 Define a classe Backend, responsável pela interação com o banco de dados SQLite.
 
 Contém métodos como:
@@ -51,6 +58,7 @@ delete()
 search()
 
 🔹 application.py
+
 Arquivo principal que:
 
 Inicializa o banco de dados;
@@ -60,6 +68,7 @@ Instancia a interface gráfica (Gui);
 Inicia o loop da aplicação (mainloop()).
 
 🛠️ Pré-requisitos
+
 Requisito	Descrição
 Python	Versão 3.8 ou superior. Baixar
 Tkinter	Incluído por padrão no Python (pode exigir python3-tk no Linux).
@@ -67,26 +76,25 @@ SQLite	Integrado ao Python via o módulo sqlite3.
 PyInstaller	(Opcional) Para gerar executável .exe.
 
 ▶️ Como Executar a Aplicação
+
 1. Clone ou crie os arquivos
 Salve os arquivos Gui.py, Backend.py e application.py em uma mesma pasta (ex: gerenciador_clientes/).
 
 2. Verifique se o Python está instalado
 No terminal:
 
-bash
-Copiar
-Editar
 python --version
+
 3. Execute a aplicação
-bash
-Copiar
-Editar
+
 cd caminho/para/gerenciador_clientes
 python application.py
 Uma janela será aberta com a interface do Gerenciador de Clientes.
 
 🖱️ Como Usar
+ 
 Interface
+
 Campos de entrada: Nome, Sobrenome, Email, CPF
 
 Botões:
@@ -105,26 +113,23 @@ Tabela (Treeview): Exibe todos os clientes cadastrados
 
 📦 Gerando um Executável com PyInstaller
 1. Instale o PyInstaller
-bash
-Copiar
-Editar
+
+
 pip install pyinstaller
+
 2. Gere o executável
-bash
-Copiar
-Editar
+
 cd caminho/para/gerenciador_clientes
 pyinstaller --onefile --noconsole application.py
 Isso criará um executável dentro da pasta dist/.
 
 3. Executando
-bash
-Copiar
-Editar
+
 ./dist/application.exe
 A aplicação funcionará sem a necessidade de abrir o terminal.
 
 🧱 Estrutura do Banco de Dados
+
 O arquivo clientes.db contém a tabela clientes com os seguintes campos:
 
 Campo	Tipo	Descrição
@@ -140,9 +145,7 @@ A criação da tabela é automática na primeira execução via Backend.initDB()
 🐍 Erro: No module named tkinter
 No Linux, instale o suporte ao Tkinter:
 
-bash
-Copiar
-Editar
+
 sudo apt install python3-tk
 🧾 Tabela não aparece / não atualiza
 Verifique se o arquivo clientes.db está na mesma pasta da aplicação.
