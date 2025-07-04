@@ -1,0 +1,5 @@
+# Tkinter (tkinter, ttk, messagebox)
+
+# SQLite via sqlite3 (embutido no Python)
+
+# Nada de bibliotecas externas como pandas, requests, etc.
